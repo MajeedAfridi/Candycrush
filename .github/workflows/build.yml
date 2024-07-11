@@ -26,7 +26,7 @@ jobs:
           docker build -t candycrush .
           docker tag candycrush majeedkhan09890/candycrush:latest
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
-          docker push sevenajay/candycrush:latest
+          docker push majeedkhan09890/candycrush:latest
         env:
           DOCKER_CLI_ACI: 1
       - name: Image scan
